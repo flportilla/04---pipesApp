@@ -1,0 +1,71 @@
+<div class="text-layout">
+    <h1>Basic pipes</h1>
+    <p>
+        Pipes included in Angular (common module)
+    </p>
+</div>
+
+<div class="field grid">
+
+    <div class="col-4">
+        <p-card
+            header="Uppercase"
+            [subheader]="nameLower"
+        >
+        {{nameLower | uppercase}}
+            
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card
+            header="Lowercase"
+            [subheader]="nameUpper"
+        >
+        {{nameUpper | lowercase}}
+            
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card
+            header="Titlecase"
+            [subheader]="completeName"
+        >
+        {{completeName | titlecase}}
+            
+        </p-card>
+    </div>
+
+</div>
+
+<div class="text-layout">
+    <h1>Date pipes</h1>
+    <p>
+        Pipe to handle dates
+    </p>
+</div>
+
+<div class="field grid">
+
+    <div class="col-6">
+        <p-card>
+            <ul>
+                <li> date </li>
+                <li> date | date</li>
+                <li> date | date: 'short'</li>
+                <li> date | date: 'long'</li>
+                <li> date | date: 'h:mm a LLL, y'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card>
+            <ul>
+                <li> {{ date }} </li>
+                <li> {{ date | date }} </li>
+                <li> {{ date | date:'short' }} </li>
+                <li> {{ date | date:'h:mm a LLL, y' }} </li>
+            </ul>
+        </p-card>
+    </div>
+
+</div>
