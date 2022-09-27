@@ -8,6 +8,10 @@ import { NoCommonComponent } from './pages/no-common/no-common.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { SortComponent } from './pages/sort/sort.component';
 
+import { UpperPipe } from './pipes/uppercase.pipe';
+import { FlyPipe } from './pipes/flies.pipe';
+import { OrderPipe } from './pipes/order.pipe';
+
 
 
 @NgModule({
@@ -15,11 +19,14 @@ import { SortComponent } from './pages/sort/sort.component';
     NumbersComponent,
     NoCommonComponent,
     BasicsComponent,
-    SortComponent
+    SortComponent,
+    UpperPipe,
+    FlyPipe,
+    OrderPipe,
   ],
   imports: [
     CommonModule,
-    PrimeNgModule
+    PrimeNgModule,
   ],
   exports: [
     NumbersComponent,
