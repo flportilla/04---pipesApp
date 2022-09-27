@@ -27,7 +27,7 @@
 
 <div class="grid m-0">
     <div class="col mt-3">
-        <p-table [value]="heroes | order: orderBy">
+        <p-table [value]="heroes |  slice: 0  |order: orderBy">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Name</th>
@@ -48,7 +48,7 @@
 
 <div class="grid m-0">
     <div class="col mt-3">
-        <p-table [value]="heroes | slice: 0">
+        <p-table [value]="heroes | slice: 0 ">
             <ng-template pTemplate="header">
                 <tr>
                     <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon>
