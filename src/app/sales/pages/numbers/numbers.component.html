@@ -1,1 +1,36 @@
-<p>numbers works!</p>
+<div class="text-layout">
+    <h1>Decimal pipe</h1>
+    <p>
+        Pipes included in Angular (common module)
+    </p>
+</div>
+
+<div class="field grid">
+    <div class="col-4">
+        <p-card
+            header="Net sales"
+            subheader="of current year"
+        >
+            <i class="pi pi-dollar"></i>
+            {{ netSales | number: '1.2-4' }}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card
+            header="Brute sales"
+            subheader="of current year"
+        >
+            
+            {{ bruteSales | currency:'COP':'symbol-narrow': '1.0-4' }}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card
+            header="Earning percent"
+            subheader="of current year"
+        >
+            
+            {{ percentage | percent:'2.2-2' }}
+        </p-card>
+    </div>
+</div>

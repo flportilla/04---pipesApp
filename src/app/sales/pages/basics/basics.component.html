@@ -45,7 +45,6 @@
 </div>
 
 <div class="field grid">
-
     <div class="col-6">
         <p-card>
             <ul>
@@ -55,6 +54,14 @@
                 <li> date | date: 'long'</li>
                 <li> date | date: 'h:mm a LLL, y'</li>
             </ul>
+
+            <hr>
+            <ul>
+                <li> date | date:'long':'GMT-6' </li>
+                <li> date | date:'long':'GMT-8' </li>
+                <li> date | date:'long':'':'en' </li>
+            </ul>
+
         </p-card>
     </div>
     <div class="col-6">
@@ -63,7 +70,15 @@
                 <li> {{ date }} </li>
                 <li> {{ date | date }} </li>
                 <li> {{ date | date:'short' }} </li>
+                <li> {{ date | date:'long' }} </li>
                 <li> {{ date | date:'h:mm a LLL, y' }} </li>
+            </ul>
+
+            <hr>
+            <ul>
+                <li> {{ date | date:'long':'GMT-6' }} </li>
+                <li> {{ date | date:'long':'GMT-8' }} </li>
+                <li> {{ date | date:'long':'':'en' }} </li>
             </ul>
         </p-card>
     </div>

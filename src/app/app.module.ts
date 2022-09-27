@@ -1,5 +1,6 @@
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRounterModule } from './routes/app-rounter.module';
@@ -16,10 +17,11 @@ registerLocaleData(localeEs);
     AppComponent
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRounterModule,
+    BrowserAnimationsModule,
     SharedModule,
-    SalesModule
+    SalesModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-CO' }
